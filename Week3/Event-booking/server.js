@@ -15,4 +15,7 @@ app.use('/api/events', require('./routes/eventRoutes'));
 app.use('/api/bookings', require('./routes/bookingRoutes'));
 
 const PORT = process.env.PORT || 3000;
+app.get('/', (req, res) => {
+  res.send('🎉 Event Booking API is running!');
+});
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
