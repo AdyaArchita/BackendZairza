@@ -1,11 +1,8 @@
 
 # 🎟️ Event Booking API
-
 A Node.js + Express + MongoDB backend API for booking events with secure JWT authentication. Supports role-based access, event management, and booking functionality.
 
 > 🚀 **Live API**: [https://backendzairza.onrender.com](https://backendzairza.onrender.com)
-
----
 
 ## 📦 Features
 
@@ -16,8 +13,6 @@ A Node.js + Express + MongoDB backend API for booking events with secure JWT aut
 - ✅ Book and cancel event bookings
 - ✅ MongoDB Atlas integration
 - ✅ Deployed on Render.com
-
----
 
 ## 📁 Folder Structure
 
@@ -32,8 +27,6 @@ week3/
     ├── .env
     ├── server.js
 ```
-
----
 
 ## 🔧 Installation & Setup (Local)
 
@@ -60,14 +53,13 @@ week3/
    npx nodemon server.js
    ```
 
----
-
 ## 🧪 API Usage (via Postman)
 
 ### ✅ Register
 ```
 POST /api/auth/register
 ```
+
 **Body (JSON)**:
 ```json
 {
@@ -76,8 +68,6 @@ POST /api/auth/register
   "password": "123456"
 }
 ```
-
----
 
 ### ✅ Login
 ```
@@ -93,20 +83,13 @@ POST /api/auth/login
 
 > ✅ Response: `{ "token": "your-jwt-token" }`
 
----
-
 ### 🔐 Authenticated Requests
-
 Send the token in the headers:
-
 ```
 Authorization: Bearer <your-token>
 ```
 
----
-
 ## 🎤 Events API
-
 ### View all events
 ```
 GET /api/events
@@ -116,6 +99,7 @@ GET /api/events
 ```
 POST /api/events
 ```
+
 **Body (JSON)**:
 ```json
 {
@@ -136,8 +120,6 @@ PUT /api/events/:id
 DELETE /api/events/:id
 ```
 
----
-
 ## 🎫 Bookings API
 
 ### Book an event
@@ -150,16 +132,12 @@ POST /api/bookings/:eventId
 DELETE /api/bookings/:eventId
 ```
 
----
-
 ## 🌍 Deployment (Render)
 
 - Project is deployed at:
   👉 [https://backendzairza.onrender.com](https://backendzairza.onrender.com)
-
 - Render auto-deploys when changes are pushed to the connected GitHub repo.
 
----
 
 ## 🔐 Environment Variables
 
@@ -171,10 +149,7 @@ MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/eventBooking?r
 JWT_SECRET=your_jwt_secret
 ```
 
----
-
 ## 🧾 Tech Stack
-
 - Node.js
 - Express.js
 - MongoDB Atlas (via Mongoose)
@@ -182,8 +157,5 @@ JWT_SECRET=your_jwt_secret
 - bcrypt for password hashing
 - CORS for frontend integration
 
----
-
 ## 🙋 Contact
-
 If you need help using the API, feel free to reach out!
